@@ -14,7 +14,7 @@ a,
 a:link,
 a:visited,
 a:active {
-  color: #3ca9e2;
+  color: #601080;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -25,7 +25,7 @@ a:visited:focus,
 a:visited:hover,
 a:active:focus,
 a:active:hover {
-  color: #329dd5;
+  color: #994cc2;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -59,7 +59,7 @@ input[type="password"],
 input[type="email"] {
   width: 100%;
   padding: 0 0 0 10px;
-  margin: 10px 0;
+  margin: 10px 20;
   color: #8a8b8e;
   border: 1px solid #c2c0ca;
   font-style: normal;
@@ -79,7 +79,7 @@ input[type="email"]:focus {
 .btn-login {
   border: none;
   display: block;
-  background-color: #3ca9e2;
+  background-color: #601080;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -97,7 +97,26 @@ input[type="email"]:focus {
   padding: 20px;
 }
 .btn-login:hover {
-  background-color: #329dd5;
+  background-color: #994cc2;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+span {
+  align-items: start;
+  align-content: start;
+}
+.span-form {
+  font-size: 16px;
+  font-style: normal;
+  display: inline-block;
+  padding: 25px 0 0 0;
+}
+.span-form2 {
+  font-size: 15px;
+  padding: 20px 0 0 0;
+}
+.span-form3 {
+  color: #601080;
+  font-size: 15px;
+  padding: 20px 0 0 0;
 }

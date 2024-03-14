@@ -44,25 +44,38 @@ function Login() {
             <div className="login-form-wrap">
                 {user == null ? (
             <div>
+               
               <h2>Login</h2>
+              <span className='span-form'>E-mail ou nome de usuário</span>
               <form className='login-form'>
                 <input type="email"
                        name="email"
-                       placeholder="Email" 
+                       placeholder="" 
                        required
                        onChange={(e) => setEmail(e.target.value)}
                  />
+                <span className='span-form'>Senha</span>
         <input type="password"
                 name="password"
-                placeholder="Password" 
+                placeholder="" 
                 required
                 onChange={(e) => setPassword(e.target.value)}/>
+                <span className='span-form2'><a>Redefinir senha</a></span>
         <button type="submit"
                 className='btn-login'
-                onClick={(e) => handleLogin(e)}>Login</button>
+                onClick={(e) => handleLogin(e)}>Entrar</button>
+                <span className='span-form3'>ou</span>
+                <div className='icons'>
+                   
+                </div>
+                <div>
+
+                </div>
+                <span className='span-form3'><a>Outros métodods de acesso </a></span>
               </form>
               <p>{error}</p>
               </div>
+              
         ) : (
                  <div>
                     <h2>Olá, {user.name}</h2>
@@ -72,7 +85,10 @@ function Login() {
                  </div>
                 )}
             </div>
+
+            
 );
 }
+
 
 export default Login;

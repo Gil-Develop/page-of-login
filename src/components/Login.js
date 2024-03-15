@@ -7,7 +7,7 @@ function Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [user, setUser] = useState(null);
-
+    
     const handleLogin = async (e) => {
         e.preventDefault();
 
@@ -44,9 +44,10 @@ function Login() {
             <div className="login-form-wrap">
                 {user == null ? (
             <div>
-               
-              <h2>Login</h2>
-              <span className='span-form'>E-mail ou nome de usuário</span>
+
+                <h2>Login</h2>
+
+              <span className='span-form0'>E-mail ou nome de usuário</span>
               <form className='login-form'>
                 <input type="email"
                        name="email"
@@ -54,7 +55,7 @@ function Login() {
                        required
                        onChange={(e) => setEmail(e.target.value)}
                  />
-                <span className='span-form'>Senha</span>
+                <span className='span-form1'>Senha</span>
         <input type="password"
                 name="password"
                 placeholder="" 
@@ -66,10 +67,7 @@ function Login() {
                 onClick={(e) => handleLogin(e)}>Entrar</button>
                 <span className='span-form3'>ou</span>
                 <div className='icons'>
-                   
-                </div>
-                <div>
-
+                
                 </div>
                 <span className='span-form3'><a>Outros métodods de acesso </a></span>
               </form>
@@ -77,18 +75,18 @@ function Login() {
               </div>
               
         ) : (
-                 <div>
-                    <h2>Olá, {user.name}</h2>
-                <button type="button"
-                        className='btn-login'
-                        onClick={(e) => handleLogout(e)}>Logout</button>
-                 </div>
-                )}
-            </div>
+            <div>
+            <h2>Olá, {user.name}</h2>
+        <button type="button"
+                className='btn-login'
+                onClick={(e) => handleLogout(e)}>Logout</button>
+         </div>
 
-            
+         
+                )}
+               
+            </div>
 );
 }
-
 
 export default Login;

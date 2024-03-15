@@ -25,9 +25,11 @@ a:visited:focus,
 a:visited:hover,
 a:active:focus,
 a:active:hover {
+  text-decoration: underline;
   color: #994cc2;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .login-form-wrap {
@@ -50,7 +52,7 @@ input {
   box-sizing: border-box;
   width: 100%;
   outline: none;
-  height: 60px;
+  height: 45px;
   line-height: 60px;
   border-radius: 4px;
 }
@@ -104,19 +106,31 @@ input[type="email"]:focus {
 span {
   align-items: start;
   align-content: start;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.span-form {
+.span-form0 {
   font-size: 16px;
   font-style: normal;
   display: inline-block;
-  padding: 25px 0 0 0;
+  padding: 25px 91px 10px 0;
+}
+.span-form1 {
+  font-size: 16px;
+  font-style: normal;
+  display: inline-block;
+  padding: 25px 250px 10px 0;
 }
 .span-form2 {
-  font-size: 15px;
-  padding: 20px 0 0 0;
+  font-size: 12px;
+  padding: 20px 0 0 190px;
 }
 .span-form3 {
   color: #601080;
   font-size: 15px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 60px 0;
+  
 }
+
+

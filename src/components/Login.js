@@ -1,5 +1,9 @@
 import axios from 'axios';
 import { useState } from 'react';
+import Logo from "./Logo.js";
+import Google from "./Google.js";
+import Microsoft from './Microsoft.js';
+import Apple from './Apple.js';
 
 function Login() {
 
@@ -41,12 +45,10 @@ function Login() {
     };
 
     return (
-            <div className="login-form-wrap">
+            <div className="login-form-wrap" style={{marginTop: "4%" }}>
                 {user == null ? (
-            <div>
-
-                <h2>Login</h2>
-
+            <div >
+                <Logo />
               <span className='span-form0'>E-mail ou nome de usuário</span>
               <form className='login-form'>
                 <input type="email"
@@ -66,10 +68,16 @@ function Login() {
                 className='btn-login'
                 onClick={(e) => handleLogin(e)}>Entrar</button>
                 <span className='span-form3'>ou</span>
-                <div className='icons'>
-                
+                <div style={{}}>
+                    <nav style={{display: "flex", justifyContent: "space-around", padding: "17px 0 17px 0"}}> 
+                    
+                    <Google />
+                    <Microsoft />
+                    <Apple />
+                    </nav>
+                     
                 </div>
-                <span className='span-form3'><a>Outros métodods de acesso </a></span>
+                <span className='span-form3'><a>Outros métodos de acesso </a></span>
               </form>
               <p>{error}</p>
               </div>
@@ -89,4 +97,4 @@ function Login() {
 );
 }
 
-export default Login;
+export default Login
